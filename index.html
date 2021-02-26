@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 3 - Step 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/minimilize.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left-site">
+			<form action="">
+			    <div class="peyment-information">
+			    	<h1 class="peyment-h1">Peyment information</h1>
+			    	<label class="peyment-label label">
+			    	    CARD NUMBER
+			    	    <input type="number" placeholder="**** **** **** ****" class="input" required>
+			    	</label>
+                    <div class="holder">
+                    	<label class="holder-label label">
+                    		CARD HOLDER
+                    		<input type="text" class="input-holder input" placeholder="Michael Jordan" required>
+                    	</label>
+                    	
+                    	<div class="date">
+                    		<label class="date-extra label">
+                    			EXP.DATE
+                    			<input type="text" class="extra-input input" placeholder="03/19" required>
+                    		</label>
+                    		<label class="cvc label">
+                    			CVC
+                    			<input type="number" placeholder="***" class="input" required>
+                    		</label>
+                    	</div>
+                    </div>
+			    </div>
+			    <div class="billing">
+			    	<h1 class="billing-h1">
+			    		Billing address
+			    	</h1>
+			    	<div class="bill-address">
+			    		<label class="same-address">
+			    	    	<input type="radio" id="1" name="address" required>
+			    	        <span class="ratio">Same as the shipping address</span>
+			    	    </label>
+			    	    <hr>
+			    	    <label class="different-address">
+			    	    	<input type="radio" id="2" name="address" required>
+			    	        <span class="ratio">Use a different billing address</span>
+			    	    </label>
+			    	</div>
+			    </div>
+			    <div class="submit">
+			    	<span class="return">Return to shipping method</span>
+			    	<button class="submit-b" type="submit">Complete order</button>
+			    </div>
+			</form>
+		</div>
+		<div class="right-site">
+			<div class="chocolate-bar">
+				<img src="./img/order.jpg" alt="order" width="25" height="25">
+				<span class="bar">Chocolate bar</span>
+				<span class="cost-1">&dollar;2.49</span>
+				<span class="power">2</span>
+			</div>
+			<hr>
+			<div class="costs">
+				<div class="subtotal sub">
+					<span class="sub-span">Subtotal</span>
+					<span class="sub-cost">&dollar;4.98</span>
+				</div>
+				<div class="subtotal">
+					<span class="ship-span">Shipping</span>
+					<span class="ship-cost">&dollar;3.00</span>
+				</div>
+			</div>
+			<hr>
+			<div class="total">
+				<span class="total-span">Total</span>
+				<span class="total-cost">&dollar;7.98</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

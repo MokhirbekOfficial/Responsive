@@ -1,0 +1,288 @@
+html{
+	box-sizing: border-box;
+}
+ *,
+ *::befor,
+ *after{
+ 	box-sizing: border-box;
+ }
+ 
+ body{
+ 	font-family: 'Roboto', sans-serif;
+ 	background-color: #F9F9F9;
+ }
+ .container{
+ 	width: 90vw;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	margin-top: 50px;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: flex-start;
+ }
+ .left-site{
+ 	width: 400px;
+ }
+ form{
+ 	width: 100%;
+ }
+ .peyment-information{
+ 	width: 100%;
+ 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+ 	padding: 4%;
+ 	padding-top: 10px;
+ 	border-radius: 7px;
+ 	background-color: white;
+ 	border: 0.1px solid transparent;
+ }
+ .label{
+ 	display: flex;
+ 	flex-direction: column;
+ 	color: #A8A9A9;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ 	.input{
+ 		visibility: none;
+ 		border: none;
+ 		outline: none;
+ 		border: 2px solid #A8A9A9;
+ 		margin-top: 12.5px;
+ 		padding: 5px;
+ 		border-radius: 3px;
+ 	}
+ }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ .holder{
+ 	display: flex;
+ 	width: 100%;
+ 	margin-top: 20px;
+ }
+ .holder-label{
+ 	width: 60%;
+ }
+ .date{
+ 	display: flex;
+ 	width: 40%;
+ }
+ .date-extra{
+ 	width: 40%; 
+ 	margin-left: 10%;
+ 	margin-right: 10%;
+ }
+ .cvc{
+ 	width: 40%;
+ }
+ .billing{
+ 	width: 100%;
+ 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+ 	padding: 4%;
+ 	padding-top: 0px;
+ 	border-radius: 7px;
+ 	background-color: white;
+ 	border: 0.1px solid transparent;
+ 	margin-top: 50px;
+ }
+ .bill-address{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ hr{
+  	width: 100%;
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+ }
+ .submit{
+ 	display: flex;
+ 	width: 105%;
+ 	justify-content: space-between;
+ 	margin-top: 30px;
+ 	align-items: center;
+ }
+ .return{
+ 	color: #5F86ED;
+ }
+ .submit-b{
+ 	height: 40px;
+ 	padding: 10px;
+ 	border-radius: 5px;
+ 	outline: none;
+ 	border: none;
+ 	background-color: #5F86ED;
+ 	color: white;
+ 	border: 1px solid #5F86ED;
+ }
+ .submit-b:hover{
+ 	opacity: 0.5;
+ }
+ .submit-b:active{
+ 	background-color: white;
+ 	color: #5F86ED;
+ 	transition: color 0.5s ease;
+ 	transition: background-color 0.5s ease;
+ }
+ .right-site{
+ 	width: 300px;
+ 	border: 1px solid black;
+ 	margin-left: 5%;
+ 	background-color: white;
+ 	border-radius: 5px;
+ 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+ 	padding: 2%;
+ 	border-radius: 7px;
+ 	background-color: white;
+ 	border: 0.1px solid transparent;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ }
+ .chocolate-bar{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	position: relative;
+ }
+ img{
+ 	border: 1px solid #A8A9A9;
+ 	padding: 10px;
+ 	border-radius: 5px;
+ }
+ .bar{
+ 	margin-right: 35%;
+ }
+ .cost-1{
+ 	font-size: 18px;
+ }
+ .power{
+ 	position: absolute;
+ 	top: -10px;
+ 	left: 39px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 10px;
+ 	height: 10px;
+ 	border-radius: 50%;
+ 	background-color: #5F86ED;
+ 	padding: 4px;
+ 	font-size: 10px;
+ 	color: white;
+ 	font-weight: bold;
+ }
+.subtotal{
+	display: flex;
+	justify-content: space-between;
+}
+.sub{
+	margin-bottom: 15px;
+}
+.total{
+	display: flex;
+	justify-content: space-between;
+}
+.total-cost{
+	font-size: 18px;
+}
+@media only screen and (max-width:863px){
+	.container{
+        width: 95vw;
+	}
+	.left-site{
+		width: 50%;
+	}
+	.bar{
+ 	    margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width:700px){
+	.peyment-h1{
+		font-size: 20px;
+	}
+	.billing-h1{
+		font-size: 20px;
+	}
+	.label{
+    	font-size: 10px;
+    }
+    .submit{
+    	font-size: 15px;
+    }
+    .right-site{
+    	hr{
+    		margin-top: 11px;
+    		margin-bottom: 11px
+    	}
+    }
+}
+
+@media only screen and (max-width:620px){
+	.container{
+ 	    flex-direction: column-reverse;
+ 	    margin-right: auto;
+ 	    margin-left: auto;
+ 	    width: 80vw;
+ 	    margin-top: 20px;
+ 	    margin-bottom: 30px;
+    }
+    .left-site{
+		width: 80vw;
+	}
+	.right-site{
+ 	    width: 83vw;
+ 	    font-weight: bold;
+ 	    margin-left: 0px;
+ 	    font-size: 15px;
+ 	    margin-bottom: 10px;
+    }
+    .billing{
+    	margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:365px){
+    .submit{
+    	.submit-b{
+    		height: 5%;
+ 	        padding: 1vw;
+ 	        border-radius: 5px;
+ 	        border: 1px solid #5F86ED;
+    	}
+    }
+    .holder{
+ 	    display: flex;
+ 	    flex-direction: column;
+        width: 100%;
+ 	    margin-top: 20px; 
+        width: 100%;
+    }
+    .holder-label{
+ 	    
+    }
+    .date{
+      	display: flex;
+       	width: 70%;
+       	margin-top: 10%;
+       	margin-bottom: 5%;
+    }
+    .date-extra{
+        width: 100%; 
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .cvc{
+        width: 40%;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width:291px){
+	*{
+		font-size: 10px;
+	}
+	.peyment-h1, .billing-h1, .total-cost, .cost-1, .submit-b{
+		font-size: 12px;
+	}
+}
